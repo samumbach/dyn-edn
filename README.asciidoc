@@ -163,7 +163,7 @@ The following can be used to recover the secret within the Docker container:
                    {:docker-secrets-dir "/mysecrets"})}))
 ----
 
-If the `:docker-secrets-dir` is not available as a property, it's assumed that all secrets have been mounted at
+If `:docker-secrets-dir` is not available as a property, it's assumed that all secrets have been mounted at
 `/run/secrets` (which is Docker's default location).
 
 NOTE: In order for secrets to be available under this library, it is assumed that all secrets are mounted in the same directory.
