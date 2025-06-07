@@ -147,7 +147,7 @@ $ docker service create --replicas 1 --name <servicename> \
 
 The above will create a secret called `my-secret` and make it available as a file at `/mysecrets/mysecret`.
 
-The following can be used to recover the secret within the Docker conainer:
+The following can be used to recover the secret within the Docker container:
 
 [source,clojure]
 ----
