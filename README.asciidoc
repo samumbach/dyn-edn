@@ -180,7 +180,7 @@ $ docker service create --replicas 1 --name <servicename> \
 ----
 
 and if DB_PORT is **not** in the Environment of the container, the outcome will be the same. The value of the parameter
-will be read from the file at `/run/secrets/DB_HOST` and made available.
+will be read from the file at `/run/secrets/DB_PORT` and made available.
 
 NOTE: the value of an env variable with a particular name will overwrite a secret with
 that name i.e. an environment variable has precedence.
