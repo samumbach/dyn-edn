@@ -108,7 +108,7 @@
          (accept[this f]
            (and (.isFile f)
                 (not (.isHidden f))
-                (= (.getAbsolutePath f) (.getCanonicalPath f)))))))))
+                (not (java.nio.file.Files/isSymbolicLink (.toPath f))))))))))
 
 (defn env-readers
   "Creates a properties map from docker secrets, environment variables and
