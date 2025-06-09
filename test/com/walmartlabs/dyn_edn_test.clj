@@ -69,3 +69,6 @@
 
   (is (thrown-with-msg? ExceptionInfo #"Dynamic property FLURB not found"
                (read-edn nil "{:fail #dyn/prop FLURB}"))))
+
+(deftest foo-test
+  (is (= 1 0)))
